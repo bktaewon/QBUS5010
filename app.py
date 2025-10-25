@@ -235,6 +235,7 @@ default_year  = years[0]  if years else None
 
 # ---------------------------- UI ----------------------------
 app = Dash(__name__)
+server = app.server
 app.title = APP_TITLE
 
 def kpi_card(title, id_value, subtitle=""):
